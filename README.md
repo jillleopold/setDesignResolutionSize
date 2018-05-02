@@ -33,4 +33,5 @@
         director->setOpenGLView(glview);
     }
     director->getOpenGLView()->setDesignResolutionSize(width, height, policy);
-``` c++
+
+
