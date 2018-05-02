@@ -6,7 +6,9 @@
 
 需要注意的是：mac桌面版是没有状态栏的
 
-    auto director = Director::getInstance();
+``` c++
+
+    auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     Size framesize  = Director::getInstance()->getWinSize();
 #if(CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
@@ -31,3 +33,4 @@
         director->setOpenGLView(glview);
     }
     director->getOpenGLView()->setDesignResolutionSize(width, height, policy);
+``` c++
